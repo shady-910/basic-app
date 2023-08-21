@@ -1,0 +1,58 @@
+[debug] [2021-08-08T08:57:17.899Z] ----------------------------------------------------------------------
+[debug] [2021-08-08T08:57:17.900Z] Command:       /usr/local/bin/node /usr/local/bin/firebase functions:shell
+[debug] [2021-08-08T08:57:17.901Z] CLI Version:   9.16.0
+[debug] [2021-08-08T08:57:17.901Z] Platform:      darwin
+[debug] [2021-08-08T08:57:17.901Z] Node Version:  v14.17.1
+[debug] [2021-08-08T08:57:17.906Z] Time:          Sun Aug 08 2021 12:57:17 GMT+0400 (Gulf Standard Time)
+[debug] [2021-08-08T08:57:17.906Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-08T08:57:17.962Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-08T08:57:17.962Z] > authorizing via signed-in user (shkiratshady@gmail.com)
+[debug] [2021-08-08T08:57:17.963Z] [iam] checking project manage-apartments-rentals for permissions ["firebase.projects.get"]
+[debug] [2021-08-08T08:57:17.968Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/manage-apartments-rentals:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-08-08T08:57:19.362Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 08 Aug 2021 08:57:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1185","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-08T08:57:19.402Z] [functions] Using node@14 from host.
+[debug] [2021-08-08T08:57:19.403Z] defaultcredentials: writing to file /Users/shadi/.config/firebase/shkiratshady_gmail_com_application_default_credentials.json
+[debug] [2021-08-08T08:57:19.404Z] DEBUG: Setting GAC to /Users/shadi/.config/firebase/shkiratshady_gmail_com_application_default_credentials.json
+[debug] [2021-08-08T08:57:19.406Z] > refreshing access token with scopes: []
+[debug] [2021-08-08T08:57:19.407Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-08T08:57:19.714Z] <<< HTTP RESPONSE 200 {"date":"Sun, 08 Aug 2021 08:57:19 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-08T08:57:19.764Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/manage-apartments-rentals/adminSdkConfig [none]
+[debug] [2021-08-08T08:57:20.364Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/manage-apartments-rentals/adminSdkConfig 200
+[debug] [2021-08-08T08:57:20.365Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/manage-apartments-rentals/adminSdkConfig {"projectId":"manage-apartments-rentals","databaseURL":"https://manage-apartments-rentals-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"manage-apartments-rentals.appspot.com","locationId":"europe-west"}
+[debug] [2021-08-08T08:57:20.399Z] [functions] Watching "/Users/shadi/Desktop/Shady-Shkirat/functions" for Cloud Functions...
+[debug] [2021-08-08T08:57:20.418Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-08-08T08:57:20.419Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-08-08T08:57:20.419Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-08-08T08:57:20.419Z] DEBUG: [worker-~diagnostic~-2b9547ad-9c76-4c56-a0df-3b4f6945083a]: Assigning socketPath: /var/folders/k4/46l8cdwx2q366dqc59sncstm0000gn/T/fire_emu_23994.sock
+[debug] [2021-08-08T08:57:20.419Z] DEBUG: [worker-~diagnostic~-2b9547ad-9c76-4c56-a0df-3b4f6945083a]: BUSY
+[debug] [2021-08-08T08:57:20.531Z] DEBUG: [runtime-status] [23994] Functions runtime initialized. {"cwd":"/Users/shadi/Desktop/Shady-Shkirat/functions","node_version":"14.17.1"}
+[debug] [2021-08-08T08:57:20.532Z] DEBUG: [runtime-status] [23994] Disabled runtime features: undefined
+[debug] [2021-08-08T08:57:20.533Z] DEBUG: [runtime-status] [23994] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.0","resolution":"/Users/shadi/Desktop/Shady-Shkirat/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2021-08-08T08:57:20.534Z] DEBUG: [runtime-status] [23994] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"/Users/shadi/Desktop/Shady-Shkirat/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2021-08-08T08:57:20.535Z] DEBUG: [runtime-status] [23994] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"/Users/shadi/Desktop/Shady-Shkirat/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2021-08-08T08:57:20.537Z] DEBUG: [runtime-status] [23994] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-08-08T08:57:20.537Z] DEBUG: [runtime-status] [23994] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"/Users/shadi/Desktop/Shady-Shkirat/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2021-08-08T08:57:20.568Z] DEBUG: [runtime-status] [23994] Checked functions.config() {"config":{}}
+[debug] [2021-08-08T08:57:20.568Z] DEBUG: [runtime-status] [23994] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.14.1","resolution":"/Users/shadi/Desktop/Shady-Shkirat/functions/node_modules/firebase-functions/lib/index.js"}}
+[debug] [2021-08-08T08:57:20.569Z] DEBUG: [runtime-status] [23994] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"/Users/shadi/Desktop/Shady-Shkirat/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2021-08-08T08:57:20.569Z] DEBUG: [runtime-status] [23994] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.0","resolution":"/Users/shadi/Desktop/Shady-Shkirat/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2021-08-08T08:57:20.569Z] DEBUG: [runtime-status] [23994] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"/Users/shadi/Desktop/Shady-Shkirat/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2021-08-08T08:57:20.569Z] DEBUG: [runtime-status] [23994] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.0","resolution":"/Users/shadi/Desktop/Shady-Shkirat/functions/node_modules/firebase-admin/lib/index.js"}}
+[warn] ⚠  It looks like you're trying to access functions.config().private but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"message":"It looks like you're trying to access functions.config().private but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[warn] ⚠  TypeError: Cannot read property 'key' of undefined
+    at Object.<anonymous> (/Users/shadi/Desktop/Shady-Shkirat/functions/config/firebase.js:8:43)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/shadi/Desktop/Shady-Shkirat/functions/users/controller.js:5:21)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'key' of undefined\n    at Object.<anonymous> (/Users/shadi/Desktop/Shady-Shkirat/functions/config/firebase.js:8:43)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:14)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:92:18)\n    at Object.<anonymous> (/Users/shadi/Desktop/Shady-Shkirat/functions/users/controller.js:5:21)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)"}}
+[warn] ⚠  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2021-08-08T08:57:20.653Z] DEBUG: [worker-~diagnostic~-2b9547ad-9c76-4c56-a0df-3b4f6945083a]: exited
+[debug] [2021-08-08T08:57:20.654Z] DEBUG: [worker-~diagnostic~-2b9547ad-9c76-4c56-a0df-3b4f6945083a]: FINISHED

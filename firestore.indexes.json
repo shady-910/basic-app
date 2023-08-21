@@ -1,0 +1,37 @@
+{
+	"indexes": [
+		{
+			"collectionGroup": "properties",
+			"queryScope": "COLLECTION",
+			"fields": [
+				{
+					"fieldPath": "available",
+					"order": "DESCENDING"
+				},
+				{
+					"fieldPath": "createTime",
+					"order": "DESCENDING"
+				}
+			]
+		},
+		{
+			"collectionGroup": "users",
+			"queryScope": "COLLECTION",
+			"fields": [
+				{
+					"fieldPath": "role",
+					"order": "ASCENDING"
+				},
+				{
+					"fieldPath": "firstName",
+					"order": "ASCENDING"
+				},
+				{
+					"fieldPath": "lastName",
+					"order": "ASCENDING"
+				}
+			]
+		}
+	],
+	"fieldOverrides": []
+}

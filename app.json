@@ -1,0 +1,29 @@
+{
+	"expo": {
+		"name": "ApartmentRental",
+		"slug": "apartmentsrentalsapp",
+		"platforms": ["ios", "android", "web"],
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#1e56d9"
+		},
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": ["**/*"],
+		"description": "Application that manages apartments rentals.",
+		"android": {
+			"package": "manage.apartments.rentals",
+			"googleServicesFile": "./google-services.json"
+		},
+		"ios": {
+			"bundleIdentifier": "com.manageapartmentsrentals",
+			"googleServicesFile": "./GoogleService-Info.plist",
+			"supportsTablet": true
+		}
+	}
+}
